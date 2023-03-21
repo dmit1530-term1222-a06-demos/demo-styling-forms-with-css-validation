@@ -54,8 +54,7 @@
                     </div>
                     <div>
                         <label for="pass">Password</label>
-                        <input type="password" id="pass" name="pass" required autocomplete="off" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
-                        ">
+                        <input type="password" id="pass" name="pass" required autocomplete="off" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                         <p class="pass-help">Your password must contain at least one uppercase letter, one lowercase letter, one number and be at least a min of 8 characters</p>
                     </div>
                     <div>
